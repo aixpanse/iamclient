@@ -79,7 +79,7 @@ export const UserProvider: React.FC<UserProviderProps> = ({ children }) => {
 
     // Login function
     const login = async (redirectUrl?: string) => {
-        router.push(`${process.env.NEXT_PUBLIC_IAM_URL}/signin?redirectUrl=${redirectUrl || window.location.origin}`)
+        router.push(`${process.env.NEXT_PUBLIC_IAM_URL}/auth/signin?redirectUrl=${redirectUrl || window.location.origin}`)
     };
 
     // Logout function
